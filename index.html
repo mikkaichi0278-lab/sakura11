@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sakura AR - Debug</title>
+    <title>Sakura AR - Debug Position</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <style>
@@ -16,7 +16,7 @@
   </head>
 
   <body style="margin: 0; overflow: hidden;">
-    <div class="arjs-loader"><div>マーカーを探しています...</div></div>
+    <div class="arjs-loader"><div>新しいマーカーを認識中...</div></div>
 
     <a-scene
       vr-mode-ui="enabled: false;"
@@ -26,16 +26,15 @@
     >
       <a-nft
         type="nft"
-        url="https://mikkaichi0278-lab.github.io/sakura10/sakura"
+        url="https://mikkaichi0278-lab.github.io/sakura11/sakura"
         smooth="true"
-        smoothCount="10"
-        minConfidence="0.4"
+        smoothCount="5"
+        minConfidence="0.2"
       >
         <a-image
           src="butterfly.png"
           position="0 0 0" 
-          scale="300 300 300"
-          rotation="-90 0 0"
+          scale="1000 1000 1000"
         ></a-image>
       </a-nft>
 
