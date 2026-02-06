@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sakura AR - Repo sakura11</title>
+    <title>Sakura AR - 3m Challenge</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <style>
@@ -11,37 +11,35 @@
         background-color: rgba(0, 0, 0, 0.8); z-index: 9999;
         display: flex; justify-content: center; align-items: center;
       }
-      .arjs-loader div { text-align: center; font-size: 1.25em; color: white; }
     </style>
   </head>
 
   <body style="margin: 0; overflow: hidden;">
-    <div class="arjs-loader"><div>新しいレポジトリから読み込み中...</div></div>
+    <div class="arjs-loader"><div>遠くの桜を探しています...</div></div>
 
     <a-scene
       vr-mode-ui="enabled: false;"
-      renderer="logarithmicDepthBuffer: true; precision: medium;"
+      renderer="logarithmicDepthBuffer: true; precision: high; antialias: false; alpha: true;"
       embedded
-      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; sourceWidth:1280; sourceHeight:720; displayWidth:1280; displayHeight:720;"
     >
-     <a-nft
-  type="nft"
-  url="https://mikkaichi0278-lab.github.io/sakura11/sakura"
-  smooth="true"
-  smoothCount="15"      smoothTolerance=".01" smoothThreshold="5"   minConfidence="0.1"   >
-  <a-image
-    src="butterfly.png"
-    position="-200 100 -200" 
-    scale="800 800 800"
-    rotation="-90 0 0"
-  ></a-image>
-</a-nft>
+      <a-nft
+        type="nft"
+        url="https://mikkaichi0278-lab.github.io/sakura11/sakura"
+        smooth="true"
+        smoothCount="20"      smoothTolerance=".05" 
+        smoothThreshold="10"
+        minConfidence="0.05"   >
+        <a-image
+          src="butterfly.png"
+          position="-200 100 -200" 
+          scale="800 800 800"
+          rotation="-90 0 0"
+        ></a-image>
+      </a-nft>
 
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
-
-
-
 
