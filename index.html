@@ -24,23 +24,28 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-nft
-        type="nft"
-        url="https://mikkaichi0278-lab.github.io/sakura11/sakura"
-        smooth="true"
-        smoothCount="10"
-        minConfidence="0.2"
-      >
-        <a-image
-          src="butterfly.png"
-          position="0 0 0" 
-          scale="1000 1000 1000"
-          rotation="-90 0 0"
-        ></a-image>
-      </a-nft>
+     <a-nft
+  type="nft"
+  url="https://mikkaichi0278-lab.github.io/sakura11/sakura"
+  smooth="true"
+  smoothCount="15"
+  minConfidence="0.3"
+>
+  <a-image
+    src="butterfly.png"
+    position="-800 100 -400" 
+    scale="500 500 500"
+    rotation="-90 0 0"
+  ></a-image>
+
+  <a-image src="petal.png" petal-particle position="-800 300 -400" scale="100 100 100"></a-image>
+  <a-image src="petal.png" petal-particle position="-600 200 -300" scale="120 120 120"></a-image>
+  <a-image src="petal.png" petal-particle position="-1000 400 -500" scale="80 80 80"></a-image>
+</a-nft>
 
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
+
 
